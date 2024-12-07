@@ -1,0 +1,45 @@
+<!--
+* File: hengfel.component.html
+* Author: Katonás Péter
+* Copyright: 2024, Katonás Péter
+* Group: SZOFT II/2/E
+* Date: 2024-12-07
+* Github: https://github.com/DanteTheBeta/hengfel.git
+* Licenc: GNU GPL
+-->
+
+<body>
+    <div class="container">
+      <div class="box">
+        <h1>Henger felszínének számítása</h1>
+        <form (ngSubmit)="calculateSurface()">
+          <div class="inputForm">
+            <label for="radius">Sugár (cm):</label>
+            <input
+              type="number"
+              id="radius"
+              [(ngModel)]="radius"
+              name="radius"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="inputForm">
+            <label for="height">Magasság (cm):</label>
+            <input
+              type="number"
+              id="height"
+              [(ngModel)]="height"
+              name="height"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="submit">Számítás</button>
+        </form>
+        <div *ngIf="surface !== null">
+          <p>A henger felszíne: {{ surface | number: '1.2-2' }} cm²</p>
+        </div>
+      </div>
+    </div>
+</body>

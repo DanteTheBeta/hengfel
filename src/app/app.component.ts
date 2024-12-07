@@ -1,12 +1,22 @@
+/*
+* File: app.component.ts
+* Author: Katonás Péter
+* Copyright: 2024, Katonás Péter
+* Group: SZOFT II/2/E
+* Date: 2024-12-07
+* Github: https://github.com/DanteTheBeta/hengfel.git
+* Licenc: GNU GPL
+*/
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HengfelComponent } from './hengfel/hengfel.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true, 
+  imports: [HengfelComponent], 
+  template: `
+    <app-hengfel></app-hengfel>
+  `
 })
-export class AppComponent {
-  title = 'hengfel';
-}
+export class AppComponent {}
