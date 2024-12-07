@@ -8,44 +8,44 @@
 * Licenc: GNU GPL
 */
 
-/* Alap stílusok */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Háttérszín a képernyőn */
+    background-color: #f4f4f4; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 100% magasságot adunk a képernyőnek */
+    height: 100vh; 
     box-sizing: border-box;
   }
   
-  /* Kék doboz a középen */
+  
   .container {
-    background-color: #007BFF; /* Kék háttérszín */
+    background-color: #007BFF; 
     padding: 20px;
     width: 100%;
-    max-width: 600px; /* Max szélesség beállítása */
-    box-sizing: border-box; /* Box sizing beállítása */
-    border-radius: 10px; /* Lekerekített sarkok */
-    color: white; /* Fehér szöveg szín */
+    max-width: 600px; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    color: white; 
     text-align: center;
   }
   
-  /* Űrlap stílus */
+  
   form {
     margin-bottom: 20px;
   }
   
-  /* Címkék */
+  
   label {
     margin-right: 10px;
-    display: block; /* A címke és az input elemek jobban elhelyezkednek */
-    margin-bottom: 5px; /* Kisebb távolság a címke és az input között */
+    display: block; 
+    margin-bottom: 5px; 
   }
   
-  /* Input mezők */
+  
   input {
     margin-bottom: 10px;
     padding: 10px;
@@ -55,7 +55,7 @@ body {
     border: 1px solid #ccc;
   }
   
-  /* Gombok */
+  
   button {
     padding: 10px 20px;
     background-color: #0056b3;
@@ -67,21 +67,21 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
-  /* Gomb hover */
+  
   button:hover {
     background-color: #003d80;
     transform: scale(1.05);
   }
   
-  /* Reszponzivitás: kisebb képernyők */
+  
   @media (max-width: 768px) {
     .container {
       padding: 15px;
-      width: 90%; /* Kisebb képernyőkön a szélesség 90%-ra csökken */
+      width: 90%;
     }
   
     input, button {
-      width: 100%; /* Az input és a gombok 100%-ra lesznek állítva */
+      width: 100%; 
     }
   }
   
